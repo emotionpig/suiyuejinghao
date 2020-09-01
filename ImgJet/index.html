@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<title>图片爬虫 1.0</title>
+
+	<meta name="robots" content="none">
+	<meta name="author" content="Lige">
+	<link rel="icon" type="image/png" sizes="16x16" href="image/logo/logo-16-red.png">
+	<!-- <link rel="icon" type="image/png" sizes="32x32" href="/image/logo/logo-32-red.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="/image/logo/logo-48-red.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/image/logo/logo-96-red.png">
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/image/logo/logo-180.png"> -->
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body ontouchstart="">
+	<nav id="nav">
+		<a class="edge-btn" onclick="edgeNav()">&equiv;</a>
+		<h1></h1>
+		<ul class="show"></ul>
+	</nav>
+
+	<article id="article"></article>
+
+	<aside id="aside">
+		<a class="edge-btn" onclick="edgeAside()">&equiv;</a>
+		<form>
+
+			<fieldset id="his">
+				<legend>
+					<span>我的资源</span>
+				</legend>
+				<select id="his-list" size="5" onchange="showHis(this)"></select>
+			</fieldset>
+
+			<fieldset id="cfg">
+				<legend>
+					<span>路径配置：</span>
+					<input type="text" class="cfgNameEdit" id="cfgName" name="cfgInput" value="" autocomplete="off" onfocus="startInput(this)" onblur="checkInput(this)" placeholder="请输入配置名称">
+					<button type="button" class="cfgNameEdit" name="cfgConfirm" onclick="confirmInput(this)">确定</button>
+					<button type="button" class="cfgNameEdit" name="cfgCancel" onclick="cancelInput(this)">取消</button>
+					<b class="cfgReady hide" name="inputText"></b>
+					<a class="cfgReady hide" name="showMore" onclick="showMore(this)"><b>&nbsp;&equiv; &nbsp; </b></a>
+					<button type="button" class="cfgBtn hide" onclick="addCfg(this)">添加</button>
+					<button type="button" class="cfgBtn hide" onclick="setCfg(this)">修改</button>
+					<button type="button" class="cfgBtn hide" onclick="delCfg(this,true)">删除</button>
+				</legend>
+			</fieldset>
+
+			<fieldset id="tpl">
+				<legend>
+					<input type="text" class="cfgNameEdit" name="cfgInput" autocomplete="off" onfocus="startInput(this)" onblur="checkInput(this)" placeholder="请输入路径名称">
+					<button type="button" class="cfgNameEdit" name="cfgConfirm" onclick="confirmInput(this)">确定</button>
+					<button type="button" class="cfgNameEdit" name="cfgCancel" onclick="cancelInput(this)">取消</button>
+					<b class="cfgReady hide" name="inputText"></b>
+					<a class="cfgReady hide" name="showMore" onclick="showMore(this)"><b>&nbsp;&equiv; &nbsp; </b></a>
+					<button type="button" class="cfgBtn hide" onclick="setCfg(this)">修改</button>
+					<button type="button" class="cfgBtn hide" onclick="delCfg(this)">删除</button>
+				</legend>
+				<input type="text" name="cfgValue" autocomplete="off" onfocus="startInput(this)" onblur="checkInput(this)" placeholder="请输入路径值">
+			</fieldset>
+
+			<fieldset>
+				<legend>运行爬虫</legend>
+				<button type="button" id="run" onclick="runChecking()">开始</button> 
+				<button onclick="window.stop()">终止</button>
+				<button type="button" id="save">保存</button>
+				<button type="reset" id="reset">重置</button>
+				<label id="search-path-state"></label>
+				<p id="search-info"></p>
+			</fieldset>
+
+			<!-- <fieldset>
+				<legend>搜索配置</legend>
+				<p>
+					<label for="max-loaded">加载上限</label>
+					<input type="text" name="max-loaded" id="max-loaded" value="1000">
+				</p>
+				<p>
+					<label for="max-error">容错上限</label>
+					<input type="text" name="max-error" id="max-error" value="20">
+				</p>
+				<p>
+					<label for="max-async">批量上限</label>
+					<input type="text" name="max-async" id="max-async" value="10">
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>运行爬虫</legend>
+				<button type="button" id="run">运行</button>
+				<button type="button" id="save">保存</button>
+				<button type="reset" id="reset">重置</button>
+			</fieldset> -->
+		</form>
+	</aside>
+
+	<script src="index.js"></script>
+</body>
+
+</html>

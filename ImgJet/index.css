@@ -1,0 +1,278 @@
+html,
+body {
+	margin          : 0;
+	padding         : 0;
+	width           : 100%;
+	height          : 100%;
+	font-size       : 16px;
+	line-height     : 16px;
+	color           : threedface;
+	background-color: #000000;
+}
+
+article {
+	font-size  : 0;
+	line-height: 0;
+	text-align : center;
+}
+
+
+img {
+	display: none;
+}
+
+h1 {
+	margin     : 0;
+	padding    : 0;
+	cursor     : default;
+	font-size  : 1.2rem;
+	line-height: 1.5rem;
+}
+
+ul {
+	margin     : 0;
+	padding    : 0;
+	width      : 100%;
+	display    : none;
+	list-style : none;
+	font-size  : 0;
+	line-height: 0;
+}
+
+li {
+	font-size  : 0;
+	line-height: 0;
+	display    : inline-block;
+}
+
+a {
+	font-size  : 1rem;
+	height     : 2rem;
+	line-height: 2rem;
+	cursor     : pointer;
+	display    : inline-block;
+}
+
+b,
+span {
+	cursor: default;
+}
+
+a>b {
+	cursor: pointer;
+}
+
+p {
+	margin : 0;
+	padding: 0;
+	cursor : default;
+	color  : threedface;
+}
+
+fieldset {
+	margin-bottom: 0.5rem;
+}
+
+#his select {
+	width: 100%;
+}
+
+#his>legend>input {
+	width: calc(100% - 11rem);
+}
+
+#tpl {
+	display: none;
+}
+
+#cfg>legend,
+#cfg>fieldset>legend {
+	width: 100%;
+}
+
+#cfg>fieldset>input {
+	width: 98.4%;
+}
+
+#cfg>legend>input {
+	width: calc(100% - 12rem);
+}
+
+#cfg>fieldset>legend>input {
+	width: calc(100% - 6.8rem);
+}
+
+#cfg>legend>button,
+#cfg>fieldset>legend>button {
+	cursor: pointer;
+}
+
+.no-font {
+	padding: 0.2rem 0.1rem;
+}
+
+nav,
+aside {
+	padding         : 1rem;
+	display         : inline-block;
+	position        : fixed;
+	box-sizing      : border-box;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav {
+	text-align: center;
+}
+
+aside {
+	text-align: left;
+}
+
+.nav-top nav,
+.nav-top aside {
+	width : 100%;
+	height: auto;
+}
+
+.nav-top nav {
+	top   : 0;
+	bottom: auto;
+}
+
+.nav-top aside {
+	top   : auto;
+	bottom: 0;
+}
+
+.nav-top nav li,
+.nav-top nav a {
+	width: auto;
+}
+
+.nav-top article img {
+	max-width: 100%;
+}
+
+.nav-left nav,
+.nav-left aside {
+	top   : 0;
+	width : 25rem;
+	height: 100%;
+	bottom: auto;
+}
+
+.nav-left nav {
+	left: 0;
+}
+
+.nav-left aside {
+	right: 0;
+}
+
+.nav-left nav li,
+.nav-left nav a {
+	width: 100%;
+}
+
+.nav-left article img {
+	max-height: 100%;
+}
+
+.nav-top nav .no-font,
+.nav-left .no-font {
+	font-size  : 0;
+	line-height: 0;
+}
+
+.nav-top nav .no-font,
+.nav-top nav img,
+.nav-left .no-font,
+.nav-left nav img {
+	width : auto;
+	height: 5rem;
+}
+
+.nav-top nav a.edge-btn,
+.nav-top aside a.edge-btn,
+.nav-left nav a.edge-btn,
+.nav-left aside a.edge-btn {
+	position   : absolute;
+	width      : auto;
+	height     : auto;
+	line-height: 1rem;
+}
+
+.nav-top nav a.edge-btn,
+.nav-top aside a.edge-btn {
+	left: 50%;
+}
+
+.nav-top nav a.edge-btn {
+	top   : auto;
+	bottom: 0;
+}
+
+.nav-top aside a.edge-btn {
+	top   : 0;
+	bottom: auto;
+}
+
+.nav-left nav a.edge-btn,
+.nav-left aside a.edge-btn {
+	top: 50%;
+}
+
+.nav-left nav a.edge-btn {
+	left : auto;
+	right: 0;
+}
+
+.nav-left aside a.edge-btn {
+	left : 0;
+	right: auto;
+}
+
+
+.nav-top nav.visible {
+	top: 0;
+}
+
+.nav-top nav.hidden {
+	top: calc(-100% + 1rem);
+}
+
+.nav-top aside.visible {
+	bottom: 0;
+}
+
+.nav-top aside.hidden {
+	bottom: calc(-100% + 1rem);
+}
+
+.nav-left nav.visible {
+	left: 0;
+}
+
+.nav-left nav.hidden {
+	left: -24rem;
+}
+
+.nav-left aside.visible {
+	right: 0;
+}
+
+.nav-left aside.hidden {
+	right: -24rem;
+}
+
+.err {
+	border-color: red;
+}
+
+.show {
+	display: inline-block;
+}
+
+.hide {
+	display: none;
+}

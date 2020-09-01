@@ -1,0 +1,344 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    cursor: default;
+}
+
+html, body {
+    overflow: hidden;
+    background-color: Silver;
+}
+
+#MainBox {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#HeadBox {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    background: #000000;
+}
+
+#FootBox {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    background: #282828;
+}
+
+#ContentBox {
+    width: 100%;
+    height: 440px;
+    overflow: hidden;
+    position: relative;
+    background: #FFFFFF;
+}
+
+/*********************************************
+body\MainBox\HeadBox\
+**********************************************/
+#HeadImg {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+#SiteTitle {
+    left:35px;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 30px;
+    position: absolute;
+}
+
+#MenuUl{
+    left:200px;
+    width:240px;
+    height:30px;
+    display:block;
+    overflow: hidden;
+    position: absolute;
+}
+.ALi,.LineLi{
+    float:left;
+    height:30px;
+    display:block;
+    color:#8f8f8f;
+    line-height:30px;
+    overflow: hidden;
+    text-align:center; 
+}
+
+.ALi{
+    width:40px;
+    overflow:hidden;
+}
+
+.LineLi{
+    width:10px;
+}
+
+.MenuA{
+    color:#8F8F8F;
+    font-size:14px;
+    cursor:pointer;
+    overflow:hidden;
+    font-family: 黑体;
+    text-decoration:none;
+}
+
+/*********************************************
+body\MainBox\FootBox\
+**********************************************/
+#FootText {
+    width: 100%;
+    height: 40px;
+    color: #6F6F6F;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/*********************************************
+body\MainBox\ContentBox\
+**********************************************/
+#BgImg {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#BgGlass {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #000000;
+}
+
+#BigHeadImg {
+    z-index:99;
+    display:none;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.Page {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    display:none;
+}
+
+/*********************************************
+body\MainBox\ContentBox\Page0\
+**********************************************/
+#CenterBox {
+    width: 960px;
+    height: 450px;
+    position: absolute;
+}
+
+#ImgBox {
+    width: 360px;
+    height: 450px;
+    position: absolute;
+}
+#SBox1, #SBox2, #SBox3 {
+    color: #FFF;
+    width: 45px;
+    height: 45px;
+    font-size: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    line-height: 45px;
+    font-family: 黑体;
+    background: Silver;
+    position: absolute;
+    text-align: center;
+}
+#MBox1, #MBox2, #MBox3, #Cel1, #Cel2, #Cel3, #Cel4, #Cel5, #Cel6, #Cel7, #Cel8, #Cel9 {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    position: absolute;
+}
+#Cel1, #Cel2, #Cel3, #Cel4, #Cel5, #Cel6, #Cel7, #Cel8, #Cel9 {
+    cursor:pointer;
+}
+#LBox {
+    top: 90px;
+    left: 90px;
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+    position: absolute;
+}
+#MBox1 {
+    left: 135px;
+    height: 88px;
+}
+#SBox1 {
+    top: 45px;
+    left: 226px;
+    width: 43px;
+    height: 43px;
+}
+#MBox2 {
+    top: 181px;
+    width: 88px;
+    height: 88px;
+    background: Silver;
+}
+#SBox2 {
+    top: 270px;
+    left: 45px;
+    width: 43px;
+    font-size: 16px;
+    background: #F00;
+}
+#MBox3 {
+    top: 362px;
+    left: 225px;
+    height: 88px;
+}
+#SBox3 {
+    top: 362px;
+    left: 181px;
+    width: 43px;
+    height: 43px;
+}
+#Cel4, #Cel5, #Cel6 {
+    top: 90px;
+    height: 88px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+#Cel7, #Cel8, #Cel9 {
+    top: 180px;
+}
+#Cel2, #Cel5, #Cel8 {
+    left: 90px;
+    width: 88px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+#Cel3, #Cel6, #Cel9 {
+    left: 180px;
+}
+#LImg {
+    width: 270px;
+    height: 270px;
+    border-width: 0;
+    position: absolute;
+}
+#M1Img, #M3Img {
+    width: 90px;
+    height: 88px;
+    border-width: 0;
+    position: absolute;
+}
+#YM, #D {
+    color: #FFF;
+    display: block;
+    font-family: Arial;
+    text-align: center;
+}
+#YM {
+    height: 28px;
+    background: #999;
+    font-size: 14px;
+    line-height: 36px;
+}
+#D {
+    height: 60px;
+    font-size: 40px;
+    line-height: 48px;
+}
+#SiteName {
+    top: 90px;
+    left: 400px;
+    color: #F00;
+    height: 48px;
+    display: block;
+    font-size: 48px;
+    line-height: 48px;
+    font-family: 黑体;
+    font-weight: bold;
+    position: absolute;
+}
+#FirstText {
+    top: 160px;
+    left: 400px;
+    color: #FFF;
+    width: 560px;
+    height: 90px;
+    display: block;
+    padding-top:5px;
+    font-size: 16px;
+    line-height: 32px;
+    position: absolute;
+    border-top:10px solid #EEE;
+}
+
+/*********************************************
+body\MainBox\ContentBox\Page1\
+**********************************************/
+.Album{
+    width: 20px;
+    height: 30px;
+    background: #FFF;
+    position: absolute;
+    overflow:hidden;
+}
+.AlbumImg{
+    top:auto;
+    left:auto;
+    overflow:hidden;
+    position: absolute;
+}
+.AlbumName{
+    bottom:0;
+    color:#555;
+    width:100%;
+    height:30px;
+    font-size: 16px;
+    line-height:30px;
+    font-family: 黑体;
+    text-align:center;
+    position: absolute;
+    background-color:#FFF;
+}
+
+
+
+.MorePagerBtn,.PagerBtn{
+    display:block;
+    width:60px;
+    bottom:0;
+    color:#555;
+    height:15px;
+    font-size: 10px;
+    line-height:15px;
+    font-family: 黑体;
+    text-align:center;
+    position: absolute;
+    background-color:#FFF;
+}
+.PagerBtn{
+    
+    }
+    
+
+
+
+
+
+
+
